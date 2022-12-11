@@ -1,0 +1,32 @@
+what is your name |say me your name;name
+how are you|whats up;speak;I'm fine! Thank You!
+play;play_song
+game;game
+what's the time|time|clock;time
+date;say_datum
+hilfe|helf;help
+help code|coding help|stackoverflow;coding_help
+hello|hey|hi;hello
+search on youtube for|youtube for;youtube
+definie|who is|what is;wiki
+send;send_messages_dc
+search for;search_on_google
+kidding|joke;joke
+exit|quit|bye;quit
+plus|minus|geteilt|mal+|-|x|/;rechnung
+boring|bored;boring
+discord;open_discord
+head|toss;toss
+weather;weather
+read calender|today's events;calender_auslesen
+calender event;calender_eintrag
+learn math|train math;training_math
+learn latin|train latin;training_latin
+thanks;speak;No Problem every time aigain!
+what are you;speak;I'm a virtule Speak Assistent who likes to help you!
+question;speak;What is your question?
+say;say_word
+im sad;joke_sad
+haha;speak;Yeah it's funny! haha
+restart|load new;restart
+birth;speak;I've was born on the 12'th July 2022!

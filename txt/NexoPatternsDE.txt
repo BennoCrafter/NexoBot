@@ -1,0 +1,32 @@
+was ist dein name|sag mir deinen name;name
+wie geht es dir|was geht;speak;Mir geht es gut! Danke fürs Fragen
+spiele;play_song
+spiel|game;game
+was ist die uhrzeit|uhrzeit|uhr;time
+datum;say_datum
+hilfe|helf;help
+helfe coden|coding hilfe|stackoverflow;coding_help
+hallo|hey|hi|moin;hello
+suche auf youtube nach|youtube nach;youtube
+definiere|wer ist|was ist;wiki
+sende;send_messages_dc
+suche nach;search_on_google
+witz|joke;joke
+exit|beende|tschüss;quit
+plus|minus|geteilt|mal+|-|x|/;rechnung
+langweilig|langweile;boring
+discord;open_discord
+kopf|zahl;toss
+wetter;weather
+kalender lesen|heutigen ereignisse;calender_auslesen
+kalendereintrag;calender_eintrag
+lerne mathe|trainiere mathe;training_math
+lerne latein|trainiere latein;training_latin
+danke;speak;Kein Problem Immer wieder gerne
+was bist du;speak;Ich bin ein virtueller Sprachassistent der dir immer gerne hilft
+frage;speak;Was ist deine Frage
+sage;say_word
+ich bin traurig;joke_sad
+haha;speak;es freut mich das du lachst!
+restart|neu laden;restart
+geboren;speak;Ich wurde am 12 Juli 2022 erschaffen!
