@@ -1,0 +1,4 @@
+I'm sorry! I don't know this command yet or I didn't understand it!:Es tut mir Leid! Diesen Befehl behersche ich noch nicht oder ich habe es nicht verstanden!
+play:spiele
+You hear now the song:Du hörst nun den Song
+have fun!:Viel Spaß!

@@ -1,7 +1,7 @@
 from NexoActions import *
 import os
 from Intend import Intend
-
+import languageSaver
 
 # read the file
 def read_intends(intend_filename):
@@ -23,8 +23,7 @@ def respond(voice, intends):
             if intend.match(voice):
                 intend.execute(voice)
                 return
-        engine_speak("Es tut mir Leid! Diesen Befehl behersche ich "
-                     "noch nicht oder ich habe es nicht verstanden! ")
+        engine_speak(languageSaver.language["I'm sorry! I don't know this command yet or I didn't understand it!"])
         if not configs.developer_mode:
             print(voice)
 

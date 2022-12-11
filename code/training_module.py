@@ -1,5 +1,6 @@
 import csv
 import random
+import configs
 
 
 def read_training_defs(filename):
@@ -35,8 +36,8 @@ def get_question_latin():
 
 
 # INIT_MODULE #
-mathe_filename = "txt/learnmath.txt"
-latein_filename = "txt/LateinVokabeln.txt"
+mathe_filename = configs.mathe_filename
+latein_filename = configs.latein_filename
 mathe_dic = read_training_defs(mathe_filename)
 latein_dic = read_training_defs(latein_filename)
 # MADE BY BENNO #

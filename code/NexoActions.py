@@ -17,7 +17,7 @@ import locale
 import training_module
 import requests
 import PrivateConfigs
-import weather
+import languageSaver
 
 ####################
 engine = pyttsx3.init()
@@ -34,13 +34,13 @@ def record_audio(ask="", dialog_happend=True):
         audio = r.listen(source, 5, 5)  # listen for the audio via source
         voice_data = ""
         try:
-            voice_data = r.recognize_google(audio, language=configs.language)  # convert audio to text
+            voice_data = r.recognize_google(audio, language=configs.pronouncing_language)  # convert audio to text
             if voice_data != "" and dialog_happend:
                 print("✔️")
         except sr.UnknownValueError:  # error: recognizer does not understand
             pass
         except sr.RequestError:
-            print('Der Dienst ist offline! Bist du mit dem Internet verbunden?')  # error: recognizer is not connected
+            pass
         if voice_data:
             print(voice_data.lower())
         return voice_data.lower()
@@ -74,10 +74,10 @@ def show_logo():
 
 
 def play_song(voice):
-    index = voice.index('spiele') + 6
+    index = voice.index(languageSaver.language["play"]) + len(languageSaver.language["play"])
     search_term = voice[index:]
     kit.playonyt(search_term)
-    engine_speak("Du hörst nun den song" + search_term + " Viel Spaß!")
+    engine_speak(languageSaver.language["You hear now the song"] + " " + search_term + " " + languageSaver.language["have fun!"])
 
 
 def time(voice):
@@ -217,7 +217,8 @@ def weather(voice):
         data = response.json()
         weather_description = data["weather"][0]["description"]
         tempreature = round(data["main"]["temp"] - 273.15)
-        engine_speak("Das Wetter ist " + weather_description + ". Und die Temperatur beträgt " + str(tempreature) + " Grad Celcius")
+        engine_speak("Das Wetter ist " + weather_description + ". Und die Temperatur beträgt " + str(
+            tempreature) + " Grad Celcius")
     else:
         engine_speak("Ich konnte keine Daten auslesen!")
 
