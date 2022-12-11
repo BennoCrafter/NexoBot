@@ -25,34 +25,50 @@ r = sr.Recognizer()
 
 
 def record_audio(ask="", dialog_happend=True):
-    with sr.Microphone() as source:  # microphone as source
+    if configs.input_system:
         if ask:
-            engine_speak(ask)
+            print(ask)
         if dialog_happend:
             show_logo()
             print("...")
-        audio = r.listen(source, 5, 5)  # listen for the audio via source
-        voice_data = ""
-        try:
-            voice_data = r.recognize_google(audio, language=configs.pronouncing_language)  # convert audio to text
-            if voice_data != "" and dialog_happend:
-                print("✔️")
-        except sr.UnknownValueError:  # error: recognizer does not understand
-            pass
-        except sr.RequestError:
-            pass
+        voice_data = input(":")  # listen for the audio via source
+        if voice_data != "" and dialog_happend:
+            print("✔️")
         if voice_data:
             print(voice_data.lower())
         return voice_data.lower()
 
+    else:
+        with sr.Microphone() as source:  # microphone as source
+            if ask:
+                engine_speak(ask)
+            if dialog_happend:
+                show_logo()
+                print("...")
+            audio = r.listen(source, 5, 5)  # listen for the audio via source
+            voice_data = ""
+            try:
+                voice_data = r.recognize_google(audio, language=configs.pronouncing_language)  # convert audio to text
+                if voice_data != "" and dialog_happend:
+                    print("✔️")
+            except sr.UnknownValueError:  # error: recognizer does not understand
+                pass
+            except sr.RequestError:
+                pass
+            if voice_data:
+                print(voice_data.lower())
+            return voice_data.lower()
+
 
 def engine_speak(audio_string):
-    if not configs.pause:
-        audio_string = str(audio_string)
-        if not configs.developer_mode:
+    if configs.speak:
+        if not configs.pause and not configs.developer_mode:
             print(configs.assis_name + ":", audio_string)
         engine.say(audio_string)
         engine.runAndWait()
+    else:
+        if not configs.pause and not configs.developer_mode:
+            print(configs.assis_name + ":", audio_string)
 
 
 def show_logo():
@@ -325,6 +341,11 @@ def training_latin(voice):
         else:
             engine_speak("Die Lösung war " + q_a[1])
 
+def input_system():
+    if configs.input_system:
+        print("True")
+    else:
+        print("False")
 
 def say_word(voice):
     speak_word = str(voice.split("sage"))

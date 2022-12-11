@@ -4,6 +4,8 @@ from Intend import Intend
 import languageSaver
 
 # read the file
+
+
 def read_intends(intend_filename):
     my_intends = []
     with open(intend_filename, newline='') as pfile:
