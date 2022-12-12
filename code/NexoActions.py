@@ -4,12 +4,13 @@ import sys
 import webbrowser
 import wikipedia
 from random import randint
+import pyttsx3
 import pywhatkit as kit
 from time import ctime
 import speech_recognition as sr
 import random
 import pyjokes
-import subprocess
+from pyttsx3 import voice
 import configs
 from datetime import date
 import locale
@@ -17,8 +18,10 @@ import training_module
 import requests
 import PrivateConfigs
 import languageSaver
+from time import sleep
 
 ####################
+engine = pyttsx3.init()
 r = sr.Recognizer()
 
 
@@ -59,24 +62,23 @@ def record_audio(ask="", dialog_happend=True):
 
 
 def engine_speak(audio_string):
-    if configs.say:
-        if not configs.pause and not configs.developer_mode:
+    if configs.say and not configs.developer_mode and not configs.pause:
+        if configs.speak_variant == 0:
+            os.system("say " + audio_string)
             print(configs.assis_name + ":", audio_string)
-        subprocess.call(['say', audio_string])
-    else:
-        if not configs.pause and not configs.developer_mode:
+        if configs.speak_variant == 1:
+            engine.say(audio_string)
             print(configs.assis_name + ":", audio_string)
+    if not configs.say and not configs.pause and not configs.developer_mode:
+        print(configs.assis_name + ":", audio_string)
 
 
 def show_logo():
     if not configs.printed_header:
-        print(' _   _                ')
-        print('| \ | |               ')
-        print('|  \| | _____  _____  ')
-        print('| . ` |/ _ \ \/ / _ \ ')
-        print('| |\  |  __/>  < (_) |')
-        print('|_| \_|\___/_/\_\___/ ')
-        hello(voice="")
+        for i in range(6):
+            print(configs.ascii_art_pattern[i])
+            sleep(0.1)
+        hello(voice)
         configs.printed_header = True
 
 
