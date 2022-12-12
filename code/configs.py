@@ -1,6 +1,6 @@
 from datetime import date
 
-
+on = True
 months = ["januar", "februar", "märz", "april", "mai", "juni", "juli", "august",
           "september", "oktober", "november", "dezember"]
 alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k',
