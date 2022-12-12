@@ -1,7 +1,7 @@
 import configs
 from NexoActions import engine_speak
 from datetime import datetime
-import languageSaver
+
 
 module = __import__("NexoActions")
 
@@ -28,11 +28,11 @@ class Intend:
     def execute(self, voice):
         if configs.developer_mode:
             current_time = self.now.strftime("%H:%M:%S")
-            if self.action_def == "speak":
+            if self.action_def == "say":
                 print(self.action_def + " - " + self.action_param + " - ", current_time)
             else:
                 print(self.action_def + " -", current_time)
-        if self.action_def == 'speak':
+        if self.action_def == 'say':
             engine_speak(self.action_param)
         else:
             func = getattr(module, self.action_def)

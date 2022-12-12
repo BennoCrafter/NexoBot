@@ -4,13 +4,12 @@ import sys
 import webbrowser
 import wikipedia
 from random import randint
-import pyttsx3
 import pywhatkit as kit
 from time import ctime
 import speech_recognition as sr
 import random
 import pyjokes
-from pyttsx3 import voice
+import subprocess
 import configs
 from datetime import date
 import locale
@@ -20,7 +19,6 @@ import PrivateConfigs
 import languageSaver
 
 ####################
-engine = pyttsx3.init()
 r = sr.Recognizer()
 
 
@@ -61,11 +59,10 @@ def record_audio(ask="", dialog_happend=True):
 
 
 def engine_speak(audio_string):
-    if configs.speak:
+    if configs.say:
         if not configs.pause and not configs.developer_mode:
             print(configs.assis_name + ":", audio_string)
-        engine.say(audio_string)
-        engine.runAndWait()
+        subprocess.call(['say', audio_string])
     else:
         if not configs.pause and not configs.developer_mode:
             print(configs.assis_name + ":", audio_string)
@@ -79,7 +76,7 @@ def show_logo():
         print('| . ` |/ _ \ \/ / _ \ ')
         print('| |\  |  __/>  < (_) |')
         print('|_| \_|\___/_/\_\___/ ')
-        hello(voice)
+        hello(voice="")
         configs.printed_header = True
 
 

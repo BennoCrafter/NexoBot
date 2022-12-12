@@ -1,10 +1,235 @@
-avus;großvater
-trahere;schleppen
-mulier;mutter
-quia;weil
-se;sich
-quod;weil
-dum;während
-adire;herantreten
-eo;dorthin
-parentes;eltern
+avus Großvater
+campus Feld, freier Platz
+equus Pferd
+et und, auch
+mûrus Mauer
+puella Mädchen, Freundin
+serva Sklavin, Dienerin
+servus Sklave, Diener
+silva Wald
+via Weg, Straße
+vîcus Dorf, Gasse
+vîlla Haus, Landhaus
+cûr? warum?
+dêbêre müssen, sollen
+dolêre, doleô schmerzen, wehtun
+esse sein, sich befinden
+est er (sie, es) ist
+monêre mahnen, ermahnen
+nôn nicht
+nunc Adv. nun, jetzt
+oculus Auge
+pârêre, pâreô gehorchen
+quid? was?
+rîdêre lachen, auslachen
+sunt sie sind
+tacêre, taceô schweigen, verschweigen
+timêre, timeô fürchten, Angst haben
+augêre, augeô vergrößern, vermehren
+dominus Herr
+hîc Adv. hier
+ibî Adv. dort
+lingua Sprache, Rede
+nam denn, nämlich
+neque und nicht, auch nicht
+neque … neque weder … noch
+quis? wer?
+respondêre, respondeô antworten
+sed aber, sondern
+sedêre, sedeô sitzen
+terrêre, terreô erschrecken
+amîcus Freund
+docêre, doceô lehren, unterrichten
+gaudêre, gaudeô sich freuen
+iam Adv. schon, bereits; nun
+nôn iam nicht mehr
+numquam Adv. niemals
+praebêre, praebeô geben, hinhalten
+prîmô Adv. zuerst
+rêctê Adv. richtig, zu Recht
+saepe Adv. oft
+studêre, studeô sich bemühen, studieren
+tabula (Schreib-)Tafel, Gemälde
+tenêre, teneô halten, festhalten, besitzen
+tum Adv. da, dann, darauf, damals
+cui? wem?
+etiam auch, sogar
+flêre, fleô weinen, beweinen
+gladius Schwert
+itaque deshalb
+iterum Adv. wiederum, zum zweiten Mal
+latêre, lateô verborgen sein
+placêre, placeô gefallen
+scelerâtus Verbrecher
+sonus Ton, Klang, Geräusch
+statim Adv. sofort
+subitô Adv. plötzlich
+tantum Adv. (nachgestellt) nur
+torquêre, torqueô drehen; quälen
+adhûc Adv. bis jetzt, noch
+Aeolus Äolus (Herr über die Winde)
+aqua Wasser
+cibus Nahrung, Speise, Futter
+complêre, compleô anfüllen, auffüllen
+côpia Menge, Vorrat
+dêlêre, dêleô zerstören, vernichten
+deus Gott, Gottheit
+grâtia Dank
+grâtiam habêre danken
+habêre, habeô haben, halten
+populus Volk
+profectô Adv. sicherlich, tatsächlich
+semper Adv. immer
+ventus Wind
+amîca Freundin
+însula Insel; Wohnblock
+lacrima Träne
+laetitia Freude
+movêre, moveô bewegen, beeindrucken
+mox Adv. bald
+patêre, pateô offenstehen
+Rôma Rom
+tandem Adv. endlich
+turba (Menschen-)Menge
+valêre, valeô gesund sein, stark sein, Einfluss haben
+valê! valête! Leb wohl! Lebt wohl!
+vidêre, videô sehen
+amâre, amô lieben
+cêna Mahlzeit, Essen
+dêlectâre, dêlectô erfreuen, unterhalten
+domina Herrin, Dame
+fîlia Tochter
+intrâre, intrô betreten, eintreten
+labôrâre, labôrô arbeiten, sich anstrengen
+mênsa (Ess-)Tisch
+ôrnâre, ôrnô ausstatten, schmücken
+parâre, parô (vor)bereiten, vorhaben (m. Inf.); erwerben
+properâre, properô eilen, sich beeilen
+rogâre, rogô bitten, fragen
+sîc Adv. so
+vocâre, vocô nennen, benennen, rufen
+Âfrica Afrika
+Asia Asien
+bene Adv. gut
+captîvus Kriegsgefangener
+cênâre, cênô essen
+diû Adv. lange (Zeit)
+dolus List, Täuschung
+dubitâre, dubitô zweifeln; zögern (m. Inf.)
+Eurôpa Europa (Erdteil)
+familia Familie
+fîlius Sohn
+iniûria Unrecht, Beleidigung
+patria Heimat
+prôvincia Provinz
+pûgna Kampf
+pûgnâre, pûgnô kämpfen
+Rômânus Römer, Einwohner Roms
+spectâre, spectô betrachten, anschauen, hinsehen
+superâre, superô besiegen, überwinden, übertreffen
+Syria Syrien
+unde? woher?
+Aetna Ätna (Vulkan auf Sizilien)
+audîre, audiô hören
+Crêta Kreta (Insel im Mittelmeer)
+dêsîderâre, dêsîderô sich sehnen nach, vermissen
+ patriam dêsîderâre sich nach der Heimat sehnen
+exspectâre, exspectô warten (auf), erwarten
+habitâre, habitô wohnen, bewohnen
+lûdus Spiel; Schule
+nescîre, nesciô nicht wissen, nicht kennen, nicht verstehen
+nihil nichts
+scîre, sciô wissen, kennen, verstehen
+Sicilia Sizilien (Insel im Mittelmeer)
+ubî? wo?
+venîre, veniô kommen
+Vulcânus Vulkan(us) (Gott des Feuers)
+aedificâre, aedificô bauen
+aedificium Gebäude
+beneficium Wohltat
+Concordia Concordia (Göttin der Eintracht)
+cônsilium Beratung, Beschluss, Plan, Rat
+cûria Kurie (Sitzungsgebäude des Senats)
+dea Göttin
+discipulus Schüler
+dônum Geschenk
+forum Forum, Marktplatz
+frûmentum Getreide
+ingenium Begabung, Talent, Verstand
+libenter Adv. gerne
+porta Tor
+Sâturnus Saturn (Gott der Saat und der Zeit)
+templum Tempel
+verbum Wort, Äußerung
+ad Präp. m. Akk. zu, bei, nach, an
+ad basilicam esse bei der Markthalle sein
+ad basilicam properâre zu der Markthalle eilen
+ante Präp. m. Akk. vor
+ante cênam vor dem Essen
+ante vîllam vor dem Landhaus
+basilica Markthalle, Gerichtshalle
+cum Präp. m. Abl. mit, zusammen mit
+cum amîcô mit dem Freund
+ê / ex Präp. m. Abl. aus, von … her
+ê patriâ aus der Heimat
+ex aedificiô aus dem Gebäude
+in Präp. m. Abl. in, an, auf, bei (wo?)
+in aquâ im Wasser
+in Präp. m. Akk. in (… hinein), nach (wohin?)
+indicâre, indicô anzeigen, melden
+manêre, maneô bleiben, (er)warten
+ôrnâmentum Schmuck(stück)
+post Präp. m. Akk. hinter, nach
+ post vîllam hinter dem Landhaus
+ post cênam nach dem Essen
+pretium Preis, Wert
+probâre, probô prüfen, beweisen, für gut befinden
+sine Präp. m. Abl. ohne
+ sine amîcô ohne den Freund
+umbra Schatten
+clâmâre, clâmô laut rufen, schreien
+ego Nom. ich (betont)
+errâre, errô umherirren, (sich) irren
+invenîre, inveniô finden, erfinden
+mê Akk. mich
+mêcum mit mir
+mihi Dat. mir
+-ne Partikel im dir. Fragesatz (unübersetzt)
+nôbîs Dat. uns
+nôs Akk. uns
+nôs Nom. wir (betont)
+sine mê ohne mich
+tê Akk. dich
+têcum mit dir
+tibi Dat. dir
+tû Nom. du (betont)
+vôbîs Dat. euch
+vôbîscum mit euch
+vôs Akk. euch
+vôs Nom. ihr (betont)
+bonus, a, um gut, tüchtig
+cûnctî, ae, a alle (zusammen)
+dê m. Abl. von, von … her, von … weg, von … herab; über
+ dê templô vom Tempel herab
+imperium Befehl, Herrschaft, Reich
+laudâre, laudô loben
+magnus, a, um groß, bedeutend
+meus, a, um mein
+multî, ae, a viele
+multus, a, um viel
+narrâre, narrô erzählen
+ dê lûdô narrâre vom Spiel / über das Spiel erzählen
+novus, a, um neu, ungewöhnlich
+parvus, a, um klein, gering
+-que (angehängt) und
+ servî servaeque Sklaven und Sklavinnen
+Rômânus, a, um römisch; Subst. Römer
+tuus, a, um dein
+ut wie
+ager, agrî m Acker, Feld, Gebiet
+imperâre, imperô befehlen, herrschen (über)
+ populîs imperâre über (die) Völker herrschen
+lîber, lîbera, lîberum frei
+magister, magistrî m Lehrer, Meister
+miser, misera, miserum arm, erbärmlich, unglücklich
+niger, nigra, nigrum schwarz, dunkel
