@@ -19,6 +19,7 @@ import requests
 import PrivateConfigs
 import languageSaver
 from time import sleep
+from bs4 import BeautifulSoup
 
 ####################
 engine = pyttsx3.init()
@@ -139,7 +140,7 @@ def youtube(voice):
 
 
 def wiki(voice):
-    wikipedia.set_lang(configs.language)
+    wikipedia.set_lang(configs.pronouncing_language)
     definition = record_audio("Von was brauchst du eine Definition?")
     wiki_eintrag = wikipedia.summary(definition, sentences=configs.length_of_definitions)
     engine_speak(wiki_eintrag)
@@ -353,6 +354,7 @@ def input_system():
     else:
         print("False")
 
+
 def say_word(voice):
     speak_word = str(voice.split("sage"))
     speak_word = str(speak_word.replace(",", ""))
@@ -364,6 +366,34 @@ def joke_sad(voice):
     joke = pyjokes.get_joke(language=configs.joke_language, category=configs.joke_art)
     engine_speak(joke)
 
+
+def search_on_frag_caeser(voice):
+    search_term = voice.split("latein")[-1]
+    url = "https://www.frag-caesar.de/lateinwoerterbuch/" + search_term + "-uebersetzung.html"
+    webbrowser.get().open(url)
+    engine_speak("Das habe ich gefunden! Ich hoffe es hilft dir weiter!")
+
+
+def translate_latin_voc_with_frag_caeser(voice):
+    print("Suche...")
+    search_term = voice.split("übersetze")[-1]
+    url = f'https://www.frag-caesar.de/lateinwoerterbuch/%20{search_term}-uebersetzung.html'
+    page = requests.get(url)
+    soup = BeautifulSoup(page.content, "html.parser")
+
+    tds = soup.find_all('td', class_="eh2")
+    if tds:
+        td = tds[0]
+        siblings = td.find_next_siblings('td')
+        count = 0
+        for s in siblings:
+            if count == 3:
+                uebersetzungen = s.get_text(strip=True, separator='###').split('###')
+                print("Alle Übersetzungen: " + str(uebersetzungen))
+                engine_speak(search_term + " heißt unter anderem " + uebersetzungen[0])
+            count += 1
+    else:
+        engine_speak("Es tut mir Leid ich konnte dazu nichts finden oder ich habe es nicht korekkt verstanden.")
 
 def restart(voice):
     os.execl(sys.executable, sys.executable, *sys.argv)
