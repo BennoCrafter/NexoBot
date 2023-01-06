@@ -20,6 +20,9 @@ import PrivateConfigs
 import languageSaver
 from time import sleep
 from bs4 import BeautifulSoup
+import pyperclip
+from deep_translator import GoogleTranslator
+
 
 ####################
 engine = pyttsx3.init()
@@ -100,7 +103,8 @@ def play_song(voice):
     index = voice.index(languageSaver.language["play"]) + len(languageSaver.language["play"])
     search_term = voice[index:]
     kit.playonyt(search_term)
-    engine_speak(languageSaver.language["You hear now the song"] + " " + search_term + " " + languageSaver.language["have fun!"])
+    engine_speak(
+        languageSaver.language["You hear now the song"] + " " + search_term + " " + languageSaver.language["have fun!"])
 
 
 def time(voice):
@@ -348,6 +352,7 @@ def training_latin(voice):
         else:
             engine_speak("Die Lösung war " + q_a[1])
 
+
 def input_system():
     if configs.input_system:
         print("True")
@@ -394,6 +399,20 @@ def translate_latin_voc_with_frag_caeser(voice):
             count += 1
     else:
         engine_speak("Es tut mir Leid ich konnte dazu nichts finden oder ich habe es nicht korekkt verstanden.")
+
+
+def show_clipboard(voice):
+    # Paste text from the clipboard
+    text = pyperclip.paste()
+    print(text)
+    engine_speak("In deinem Clipboard steht:" + text)
+
+
+def translate_clipboard(voice):
+    text = pyperclip.paste()
+    translated = GoogleTranslator(source='auto', target=configs.pronouncing_language).translate(text)
+    engine_speak("Es heißt:" + translated)
+
 
 def restart(voice):
     os.execl(sys.executable, sys.executable, *sys.argv)

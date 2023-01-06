@@ -3,6 +3,7 @@ wie geht es dir|was geht;speak;Mir geht es gut! Danke fürs Fragen
 spiele;play_song
 spiel|game;game
 was ist die uhrzeit|uhrzeit|uhr;time
+übersetze zwischenablage;translate_clipboard
 datum;say_datum
 hilfe|helf;help
 helfe coden|coding hilfe|stackoverflow;coding_help
@@ -33,3 +34,4 @@ ich bin traurig;joke_sad
 haha;speak;es freut mich das du lachst!
 restart|neu laden;restart
 geboren;speak;Ich wurde am 12 Juli 2022 erschaffen!
+zwischenablage;show_clipboard

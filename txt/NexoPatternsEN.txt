@@ -30,3 +30,5 @@ im sad;joke_sad
 haha;speak;Yeah it's funny! haha
 restart|load new;restart
 birth;speak;I've was born on the 12'th July 2022!
+translate clipboard;translate_clipboard
+clipboard;show_clipboard
